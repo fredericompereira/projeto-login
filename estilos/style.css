@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte: 'Montserrat', sans-serif;
+    --cor1: #821717;
+    --cor2: #E5E5E5;
+    --cor3: #808080;
+}
+
+body {
+    height: 100vh;
+    background: url(../imagens/fundo-1280x853.jpg) center no-repeat;
+    background-size: cover;
+    font-family: var(--fonte);
+}
+
+main {
+    width: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    border-radius: 20px;
+}
+
+main header {
+    padding: 20px;
+}
+
+main header h1 {
+    color: var(--cor1);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+main header p {
+    font-size: 1.25em;
+}
+
+main section {
+    padding: 20px;
+    background-color: var(--cor2);
+    border-radius: 0px 0px 20px 20px;
+}
+
+form label {
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    color: var(--cor1);
+    font-size: 2em;
+}
+
+.dados {
+    margin: 0px 0px 20px 10px;
+    padding: 10px;
+    border: 1px solid var(--cor3);
+    border-radius: 5px;
+    font-family: var(--fonte);
+    font-size: 1em;
+}
+
+#enviar {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border: 1px solid var(--cor3);
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: var(--cor1);
+    color: #ffffff;
+    font-family: var(--fonte);
+    font-size: 1.25em;
+}
+
+#enviar:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+a {
+    color: var(--cor1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section a {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cor2);
+    text-align: center;
+}
