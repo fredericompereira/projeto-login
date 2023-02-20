@@ -8,16 +8,22 @@
 
 :root {
     --fonte: 'Montserrat', sans-serif;
-    --cor1: #821717;
-    --cor2: #E5E5E5;
-    --cor3: #808080;
-    --cor4: #ab583c;
+    --cor1: #145064;
+    --cor2: #238DB0;
 }
 
 body {
     height: 100vh;
-    background-color: var(--cor4);
     font-family: var(--fonte);
+}
+
+#fundo-site {
+    width: 100vw;
+    height: 100vh;
+    background: url(../imagens/fundo-1280x853.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(30px);
 }
 
 #login {
@@ -29,10 +35,11 @@ body {
     margin: auto;
     background-color: #ffffff;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000050;
 }
 
 #fundo-login {
-    height: 180px;
+    height: 150px;
     background: url(../imagens/fundo-640x427.jpg) center no-repeat;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
@@ -54,12 +61,11 @@ body {
 
 #container-formulario {
     padding: 20px;
-    background-color: var(--cor2);
     border-radius: 0px 0px 20px 20px;
 }
 
 .container-dados {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #formulario label {
@@ -67,14 +73,14 @@ body {
 }
 
 .material-symbols-outlined {
-    color: var(--cor4);
+    color: var(--cor1);
     font-size: 1.5em;
 }
 
 .dados {
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 10px;
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor1);
     border-radius: 5px;
     font-family: var(--fonte);
     font-size: 1em;
@@ -85,22 +91,21 @@ body {
     margin: auto;
     margin-bottom: 10px;
     padding: 10px 30px;
-    border: 1px solid var(--cor3);
+    border: none;
     border-radius: 25px;
     cursor: pointer;
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     color: #ffffff;
     font-family: var(--fonte);
     font-size: 1em;
 }
 
 #enviar:hover {
-    background-color: var(--cor2);
-    color: var(--cor1);
+    box-shadow: 0px 0px 5px #00000050;
 }
 
 a {
-    color: var(--cor4);
+    color: var(--cor1);
     font-weight: bold;
     text-decoration: none;
 }
@@ -109,9 +114,12 @@ a:hover {
     text-decoration: underline;
 }
 
-section a {
-    display: block;
+#container-esqueci {
     text-align: center;
+}
+
+#esqueci {
+    font-weight: normal;
 }
 
 footer {
@@ -120,6 +128,6 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--cor2);
+    background-color: #ffffff;
     text-align: center;
 }
