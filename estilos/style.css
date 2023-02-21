@@ -26,11 +26,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     margin: auto;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #00000050;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
     transition: 0.3s;
 }
 
@@ -38,7 +39,6 @@ body {
     height: 30%;
     background: url(../imagens/fundo-640x427.jpg) center no-repeat;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 #conteudo-login {
@@ -70,18 +70,19 @@ body {
 }
 
 .material-symbols-outlined {
+    padding: 0px 5px;
     color: var(--cor1);
     font-size: 1.5em;
 }
 
 .campo-dados {
-    width: 220px;
-    margin-left: 5px;
+    width: calc(100% - 40px);
     padding: 10px;
     border: 1px solid var(--cor1);
     border-radius: 5px;
     font-family: var(--fonte);
     font-size: 1em;
+    transform: translateY(-15%);
 }
 
 #botao-entrar {

@@ -10,25 +10,17 @@
     #img-login {
         width: 40%;
         height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 20px 0px 0px 20px;
+        float: left;
     }
 
     #conteudo-login {
         width: 60%;
         height: 100%;
-        position: absolute;
-        right: 0;
+        float: right;
     }
 
     #cabecalho-login, #formulario {
         max-width: 300px;
-    }
-
-    .campo-dados {
-        width: 260px;
     }
 }
 
