@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,7 +22,7 @@ body {
 
 #container-login {
     width: 300px;
-    height: 480px;
+    height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,19 +35,19 @@ body {
 }
 
 #img-login {
-    height: 160px;
+    height: 30%;
     background: url(../imagens/fundo-640x427.jpg) center no-repeat;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 #conteudo-login {
-    height: 280px;
+    height: 70%;
     padding: 20px;
 }
 
 #cabecalho-login {
-    height: 90px;
+    margin: auto;
     margin-bottom: 20px;
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 #formulario {
-    height: 170px;
+    margin: auto;
 }
 
 .container-dados {
@@ -74,7 +75,7 @@ body {
 }
 
 .campo-dados {
-    width: 200px;
+    width: 220px;
     margin-left: 5px;
     padding: 10px;
     border: 1px solid var(--cor1);
@@ -85,8 +86,7 @@ body {
 
 #botao-entrar {
     display: block;
-    margin: auto;
-    margin-bottom: 10px;
+    margin: 10px auto;
     padding: 10px 30px;
     border: none;
     border-radius: 25px;

@@ -8,8 +8,8 @@
     }
 
     #img-login {
-        width: 200px;
-        height: 320px;
+        width: 40%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -17,32 +17,33 @@
     }
 
     #conteudo-login {
-        width: 360px;
+        width: 60%;
+        height: 100%;
         position: absolute;
         right: 0;
     }
 
+    #cabecalho-login, #formulario {
+        max-width: 300px;
+    }
+
     .campo-dados {
-        width: 280px;
+        width: 260px;
     }
 }
 
 @media screen and (min-width: 992px) {
     #container-login {
-        width: 840px;
-        height: 500px;
+        width: 700px;
+        height: 400px;
     }
 
     #img-login {
-        width: 300px;
-        height: 500px;
+        width: 40%;
     }
 
     #conteudo-login {
-        width: 460px;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
+        width: 60%;
         padding: 40px;
     }
 
@@ -51,10 +52,6 @@
     }
 
     #botao-entrar {
-        margin: 20px 0px;
-    }
-
-    #esqueci {
-        text-align: left;
+        margin: 20px auto;
     }
 }
